@@ -113,7 +113,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
       </p>
       
       <div className="flex flex-wrap gap-2" style={{ transform: 'translateZ(10px)' }}>
-        {project.tech_stack.map(tech => (
+        {project.tech_stack.map((tech: string) => (
           <span key={tech} className="bg-white/5 border border-white/10 px-3 py-1 rounded-full text-[10px] font-mono text-zinc-300">
             {tech}
           </span>

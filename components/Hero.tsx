@@ -17,7 +17,7 @@ export default function Hero() {
         delayChildren: 0.4,
       },
     },
-  };
+  } as const;
 
   const letterVariants = {
     hidden: { opacity: 0, y: 8 },
@@ -25,12 +25,12 @@ export default function Hero() {
       opacity: 1,
       y: 0,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         damping: 12,
         stiffness: 200,
       },
     },
-  };
+  } as const;
 
   return (
     <section id="home" className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 pt-28 overflow-hidden">
